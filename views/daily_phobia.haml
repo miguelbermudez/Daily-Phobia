@@ -1,0 +1,15 @@
+%b#top
+%b#right
+%b#bottom
+%b#left
+.row
+.frame.small-11.small-centered.columns.Absolute-Center.is-fixed
+  %header
+    %p.ph-intro today&rsquo;s phobia
+    %h1.ph-name= daily_phobia["phobia"]
+    %h1.subheader.ph-descr= daily_phobia["phobia_descr"]
+
+    %p= "Last updated at " + daily_phobia["crt"].to_s
+%img#skeleton(src="/img/skeleton.png" width="190")
+%img#elk(src="/img/elk.png" width="400" )
+

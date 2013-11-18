@@ -1,0 +1,99 @@
+@import "../../components/foundation/scss/foundation/_variables"
+
+@import "../../components/foundation/scss/normalize"
+@import "../../components/foundation/scss/foundation/components/_global"
+@import "../../components/foundation/scss/foundation/components/_grid"
+@import "../../components/foundation/scss/foundation/components/_visibility"
+@import "../../components/foundation/scss/foundation/components/_block-grid"
+@import "../../components/foundation/scss/foundation/components/_type"
+
+$text-color: #0b1e08
+
+html, body
+  height: 100%
+
+body
+  background: url("/img/lightpaperfibers_@2x.png")
+  margin: 0
+
+.frame
+  //border: 1px solid $text-color
+  height: 100%
+
+header
+  //text-align: center
+  color: $text-color !important
+
+  .ph-intro
+    font-family: "garamond-premier-pro", serif
+    font-style: italic
+    font-weight: 400
+    font-size: +em-calc(36)
+    margin: 0
+    
+  .ph-name
+    font-family: "prenton-ultra-condensed", sans-serif
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-size: +em-calc(116)
+    margin-top: 0
+
+  .ph-descr
+    font-family: "garamond-premier-pro", serif
+    font-weight: 400
+    font-style: italic
+
+#skeleton, #elk
+  position: absolute
+  bottom: 10%
+
+#skeleton
+  left: 60%
+
+#elk 
+  right: 0
+
+// = body  border ==============================================================
+
+#top, #bottom, #left, #right 
+  background: $text-color
+  position: fixed
+  
+#left, #right 
+  top: 0
+  bottom: 0
+  width: 25px
+  
+#left  
+  left: 0 
+
+#right 
+  right: 0 
+    
+#top, #bottom 
+  left: 0
+  right: 0
+  height: 25px
+
+#top 
+  top: 0 
+
+#bottom  
+  bottom: 0
+
+// = abs horz and vert center  =================================================
+.Absolute-Center 
+  height: 500px
+  overflow: auto
+  margin: auto
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  &.is-fixed 
+    position: fixed
+
+
+
